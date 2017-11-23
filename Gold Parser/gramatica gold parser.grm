@@ -1,0 +1,24 @@
+﻿"Name"     = 'NSV'
+"Author"   = 'Maicon Ghidolin'
+           
+"Start Symbol" = <programa>
+
+! Terminais
+identificador = [aeiou]+
+numero = {Digit}+
+
+! Não terminais
+<booleano> ::= 'V' | 'F'
+<literal> ::= numero | <booleano>
+<operador> ::= '+' | '-' | '*' | '/' | '=' | '&' | '¬' | '%' | '>' | '<'     
+<atribuicao> ::= identificador ':' <literal> | identificador ':' identificador | identificador ':' <expressao>
+<operando> ::= identificador | <literal>
+<operacao> ::= <operando> <operador> <operando>
+<condicional> ::=  'se' <operacao> 'entao' <expressoes> 'fim' | 'se' <operacao> 'entao' <expressao> 'senao' <expressoes> 'fim'
+<iteracao> ::= 'de' <atribuicao> 'para' <operacao> 'fazer' <expressoes> 'fim' | 'enquanto' <operacao> 'fazer' <expressoes> 'fim'
+
+<expressao> ::= <atribuicao> | <operacao> | <iteracao> | <condicional>
+<expressoes> ::= <expressao> | <expressao> <expressoes>
+              
+! Programa
+<programa> ::= <expressoes>
