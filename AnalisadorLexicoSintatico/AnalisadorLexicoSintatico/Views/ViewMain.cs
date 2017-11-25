@@ -73,17 +73,31 @@ namespace Views {
 
             streamWriterSaida.WriteLine("Análise léxica concluída...\n");
 
+            if(erros != null && erros.Count > 0) {
+                MessageBox.Show("Foram encontrados erros na análise léxica. Verifique o log!");
+                streamWriterSaida.Close();
+                streamWriterSaida.Dispose();
+                return;
+            }
+
             ServicoAnalisadorSintatico servicoAnalisadorSintatico = new ServicoAnalisadorSintatico(txtArquivoGoldParser.Text);
             servicoAnalisadorSintatico.lerSimbolos();
             servicoAnalisadorSintatico.lerProducoes();
             servicoAnalisadorSintatico.lerTabelaLALR();
 
-            List<string> resultadoAnaliseSintatica = servicoAnalisadorSintatico.analisar();
+            List<string> resultadoAnaliseSintatica = servicoAnalisadorSintatico.analisar(tokensLidos);
 
             streamWriterSaida.WriteLine(String.Join(Environment.NewLine, resultadoAnaliseSintatica));
 
             streamWriterSaida.Close();
             streamWriterSaida.Dispose();
+
+            if (resultadoAnaliseSintatica != null && resultadoAnaliseSintatica.Count > 0) {
+                MessageBox.Show("Foram encontrados erros na análise sintática. Verifique o log!");
+            } else {
+                MessageBox.Show("Análise sintática concluída!");
+            }
+
         }
 
     }

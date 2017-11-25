@@ -1,0 +1,185 @@
+﻿Autômato finito gerado.
+Estado 0
+	% vai para 10
+	& vai para 8
+	* vai para 5
+	+ vai para 3
+	- vai para 4
+	/ vai para 6
+	0,1,2,3,4,5,6,7,8,9 vai para 2
+	: vai para 13
+	< vai para 11
+	= vai para 7
+	> vai para 12
+	F vai para 15
+	V vai para 14
+	a,i,o,u vai para 1
+	d vai para 31
+	e vai para 1,18,42
+	f vai para 28,37
+	p vai para 33
+	s vai para 16,23
+	¬ vai para 9
+
+Estado *10
+
+Estado *8
+
+Estado *5
+
+Estado *3
+
+Estado *4
+
+Estado *6
+
+Estado *2
+	0,1,2,3,4,5,6,7,8,9 vai para 2
+
+Estado *13
+
+Estado *11
+
+Estado *7
+
+Estado *12
+
+Estado *15
+
+Estado *14
+
+Estado *1
+	a,e,i,o,u vai para 1
+
+Estado 31
+	e vai para 32
+
+Estado *1,18,42
+	a,e,i,o,u vai para 1
+	n vai para 19,43
+
+Estado 28,37
+	a vai para 38
+	i vai para 29
+
+Estado 33
+	a vai para 34
+
+Estado 16,23
+	e vai para 17,24
+
+Estado *9
+
+Estado *32
+
+Estado 19,43
+	q vai para 44
+	t vai para 20
+
+Estado 38
+	z vai para 39
+
+Estado 29
+	m vai para 30
+
+Estado 34
+	r vai para 35
+
+Estado *17,24
+	n vai para 25
+
+Estado 44
+	u vai para 45
+
+Estado 20
+	a vai para 21
+
+Estado 39
+	e vai para 40
+
+Estado *30
+
+Estado 35
+	a vai para 36
+
+Estado 25
+	a vai para 26
+
+Estado 45
+	a vai para 46
+
+Estado 21
+	o vai para 22
+
+Estado 40
+	r vai para 41
+
+Estado *36
+
+Estado 26
+	o vai para 27
+
+Estado 46
+	n vai para 47
+
+Estado *22
+
+Estado *41
+
+Estado *27
+
+Estado 47
+	t vai para 48
+
+Estado 48
+	o vai para 49
+
+Estado *49
+
+
+Tokens Lidos:
+id: 0, estado: 17,24, rotulo: se, linha 1
+id: 1, estado: 22, rotulo: entao, linha 1
+id: 2, estado: 2, rotulo: 1, linha 1
+id: 3, estado: 7, rotulo: =, linha 1
+id: 4, estado: 2, rotulo: 2, linha 1
+id: 5, estado: 22, rotulo: entao, linha 1
+id: 6, estado: 1, rotulo: aei, linha 1
+id: 7, estado: 7, rotulo: =, linha 1
+id: 8, estado: 2, rotulo: 3, linha 1
+id: 9, estado: 30, rotulo: fim, linha 1
+id: 10, estado: 17,24, rotulo: se, linha 2
+id: 11, estado: 2, rotulo: 1, linha 2
+id: 12, estado: 7, rotulo: =, linha 2
+id: 13, estado: 2, rotulo: 2, linha 2
+id: 14, estado: 22, rotulo: entao, linha 2
+id: 15, estado: 1, rotulo: aei, linha 2
+id: 16, estado: 13, rotulo: :, linha 2
+id: 17, estado: 2, rotulo: 3, linha 2
+id: 18, estado: 27, rotulo: senao, linha 2
+id: 19, estado: 1, rotulo: oia, linha 2
+id: 20, estado: 13, rotulo: :, linha 2
+id: 21, estado: 2, rotulo: 54, linha 2
+id: 22, estado: 30, rotulo: fim, linha 2
+id: 23, estado: 1, rotulo: aoie, linha 3
+id: 24, estado: 7, rotulo: =, linha 3
+id: 25, estado: 1, rotulo: aaa, linha 3
+id: 26, estado: 1, rotulo: eee, linha 4
+id: 27, estado: 7, rotulo: =, linha 4
+id: 28, estado: 2, rotulo: 1, linha 4
+id: 29, estado: 3, rotulo: +, linha 4
+id: 30, estado: 2, rotulo: 2, linha 4
+id: 31, estado: 32, rotulo: de, linha 5
+id: 32, estado: 2, rotulo: 1, linha 5
+id: 33, estado: 36, rotulo: para, linha 5
+id: 34, estado: 2, rotulo: 2, linha 5
+id: 35, estado: 41, rotulo: fazer, linha 5
+id: 36, estado: 1, rotulo: a, linha 5
+id: 37, estado: 13, rotulo: :, linha 5
+id: 38, estado: 2, rotulo: 93, linha 5
+id: 39, estado: 30, rotulo: fim, linha 5
+Erros:
+Nenhum.
+Análise léxica concluída...
+
+Token entao inesperado na linha 1.

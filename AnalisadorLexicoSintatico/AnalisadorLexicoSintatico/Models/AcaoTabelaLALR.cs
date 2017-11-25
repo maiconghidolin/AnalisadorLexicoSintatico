@@ -4,7 +4,7 @@ namespace Models {
     class AcaoTabelaLALR {
 
         public Acao acao;
-        public int estadoDestino;
+        public int valor;
 
     }
 }

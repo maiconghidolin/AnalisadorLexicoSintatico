@@ -1,0 +1,5 @@
+se 1 = 2 entao aei = 3 fim
+ser 1 = 2 entao aei : 3 senao oia : 54 fim
+aoie = aaa
+ejee = 1 + 2
+de 1 para 2 fazer a : 93 fim
